@@ -1,4 +1,5 @@
 import os
+os.environ["CUDA_VISIBLE_DEVICES"] = ""
 import ffmpeg
 import whisper
 import argparse
@@ -6,7 +7,7 @@ import warnings
 import tempfile
 from .utils import filename, str2bool, write_srt
 
-os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:512"
+# os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:512"
 
 
 def main():

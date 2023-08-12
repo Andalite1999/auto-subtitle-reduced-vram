@@ -1,7 +1,8 @@
-import os
 from typing import Iterator, TextIO
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
-os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:512"
+# os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:512"
 
 
 def str2bool(string):
