@@ -6,6 +6,7 @@ import warnings
 import tempfile
 from .utils import filename, str2bool, write_srt
 
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:<enter-size-here>"
 
 def main():
     parser = argparse.ArgumentParser(

@@ -1,6 +1,8 @@
 import os
 from typing import Iterator, TextIO
 
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:<enter-size-here>"
+
 
 def str2bool(string):
     string = string.lower()
