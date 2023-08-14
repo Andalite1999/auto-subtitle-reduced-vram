@@ -2,7 +2,7 @@ from typing import Iterator, TextIO
 import os
 # os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
-os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:20"
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:184"
 
 
 def str2bool(string):

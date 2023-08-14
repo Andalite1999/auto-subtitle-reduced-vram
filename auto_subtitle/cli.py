@@ -7,7 +7,7 @@ import warnings
 import tempfile
 from .utils import filename, str2bool, write_srt
 
-os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:20"
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:184"
 
 
 def main():
